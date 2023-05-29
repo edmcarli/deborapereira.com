@@ -3,6 +3,20 @@
 <html dir="ltr" lang="en-US"
 	prefix="og: https://ogp.me/ns#" >
 <head>
+	<script>
+    var urlBackRedirect = 'https://deborapereira.com/suporte/'; // lembre-se de usar a url sem espaços
+    // não altere nada abaixo dessa linha
+    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+    window.onpopstate = function () {
+        setTimeout(function () {
+            location.href = urlBackRedirect;
+        }, 1);
+    };
+</script>
 	<meta charset="UTF-8">
 			
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
