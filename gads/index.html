@@ -1,13 +1,8 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <link rel="shortcut icon" type="image/png" href="C:\wamp64\www\deborapereira.com\favicon_io\favicon-32x32.png"/>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-    <!-- Google tag (gtag.js) -->
+<html>
+
+<head>
+      <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11198440432"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -20,22 +15,7 @@
 <script>
   gtag('event', 'conversion', {'send_to': 'AW-11198440432/k4QLCIOi7aUYEPDH6tsp'});
 </script>
-
-    <script>
-    var urlBackRedirect = 'https://deborapereira.com/promo/'; // lembre-se de usar a url sem espaços
-    // não altere nada abaixo dessa linha
-    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
-            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
-            document.location.search.replace('?', '').toString();
-    history.pushState({}, "", location.href);
-    history.pushState({}, "", location.href);
-    window.onpopstate = function () {
-        setTimeout(function () {
-            location.href = urlBackRedirect;
-        }, 1);
-    };
-</script>
-    <!-- Meta Pixel Code -->
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -52,186 +32,574 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=745382050672330&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://scripts.converteai.net/46758f5d-edc9-408b-a3bc-1c091403e6e3/players/644eabd02c5fbe000922c522/player.js" as="script">
-    <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
-    <link rel="preload" href="https://images.converteai.net/46758f5d-edc9-408b-a3bc-1c091403e6e3/players/644eabd02c5fbe000922c522/thumbnail.jpg" as="image">
-    <link rel="preload" href="https://cdn.converteai.net/46758f5d-edc9-408b-a3bc-1c091403e6e3/644eab9f2c5fbe000922c517/playlist.m3u8" as="fetch">
-    <link rel="dns-prefetch" href="https://cdn.converteai.net">
-    <link rel="dns-prefetch" href="https://scripts.converteai.net">
-    <link rel="dns-prefetch" href="https://images.converteai.net">
-    <link rel="dns-prefetch" href="https://api.vturb.com.br">
-    <link rel="stylesheet" href="./assets/css/com.css">
-
-    <!-- Título da Página -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta property="fb:app_id" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Detetive Digital">
+    <meta property="og:description" content="">
     <title>Detetive Digital</title>
-    
-    <style type="text/css">
-;
 
-      body {
-        color: white;
-        background-image: url("assets/img/bg.jpeg");
-        background-color: rgba(0, 0, 0, 0.6);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-blend-mode: darken;
-        font-family: 'Montserrat';font-size: 22px;
-      }
+    <link rel="stylesheet" href="bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pv2/css/style2.css?v=1">
+    <link href="pv2/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="ajax/libs/noty/3.1.4/noty.min.css">
+    <link href="pv2/css/themes/mint.css" rel="stylesheet">
+    <link href="pv2/css/ripple.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="pv2/css/sweetalert2.css">
+    <style>
+        body {
+            background-color: #fff;
+        }
 
+        @media only screen and (max-width: 480px) {
+            body {
+                background-image: url(pv2/img/bg2.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position-x: center;
+            }
+        }
 
-      .image{  
-    width: 82%;
-
-    transition: opacity .3s linear;
-   }
-@-webkit-keyframes glowing {
-  0% { background-color: #ff7f1d; -webkit-box-shadow: 0 0 3px #ff7f1d; }
-  1% { background-color: #ffa81d; -webkit-box-shadow: 0 0 3px #ffa81d; }
-}
-@-moz-keyframes glowing {
-  0% { background-color: #ff7f1d; -moz-box-shadow: 0 0 3px #ff7f1d; }
-  1% { background-color: #ffa81d; -moz-box-shadow: 0 0 3px #ffa81d; }
-}
-@-o-keyframes glowing {
-  0% { background-color: #ff7f1d; box-shadow: 0 0 3px #ff7f1d; }
-  1% { background-color: #ffa81d; box-shadow: 0 0 3px #ffa81d; }
-}
-@keyframes glowing {
-  0% { background-color: #ff7f1d; box-shadow: 0 0 3px #ff7f1d; }
-  1% { background-color: #ffa81d; box-shadow: 0 0 3px #ffa81d; }
-}
-#but a{color:white !important}
-
-.btn-fresh{
-	color: white !important; 
-	background-color:#ff7f1d;
-  -webkit-animation: glowing 800ms infinite;
-  -moz-animation: glowing 800ms infinite;
-  -o-animation: glowing 800ms infinite;
-  animation: glowing 800ms infinite; 
-  display: block;
-  padding: 23px 50px;
-  text-align: center;
-  margin: auto;
-
-}
-.content-blockquote{border-left: 4px solid #0c87c4;margin-top: calc(3% + .5vw);margin-bottom: calc(3% + .5vw);    font-size: 1.5rem !important;
-    text-align: left;
-    padding-left: 1rem;
-    line-height: 2rem;
-    font-weight: 600 !important;
-    letter-spacing: -.0625rem;}
-@media (min-width: 64rem){
-.content-blockquote {
-    font-size: 1.75rem !important	;
-    line-height: 2.25rem;
-    padding-left: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-	
-	    font-weight: 500 !important;
-}}
-	
-	
-.dois p{font-size: calc(15px + .5vw);font-weight: 495;}
-.c1{margin-top:calc(19% + .5vw) !important;}
-
-.topbar{
-    background-color: #bd0c0c;
-    padding: 15px;
-    margin: auto;
-}
-
-.topbar h1{
-    color: #fff;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 400;
-}
-
+        h1.title {
+            font-size: 1.5rem;
+            color: #2f2f2f;
+        }
     </style>
-  </head>
-  <body>
+    <script>
+    var urlBackRedirect = 'https://deborapereira.com/promo/'; // lembre-se de usar a url sem espaços
+    // não altere nada abaixo dessa linha
+    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+    window.onpopstate = function () {
+        setTimeout(function () {
+            location.href = urlBackRedirect;
+        }, 1);
+    };
+</script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-XXXXXX');</script>
+    <!-- End Google Tag Manager -->
+</head>
 
-    <!-- Geolocalização do Usuario -->
-    <section class="topbar">
-      <h1><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-          Somente <b>você e mais 3 pessoas</b> próximas de <b style="color:#28e183"><span id="city"></span></b> foram selecionadas para ter acesso ao Detetive Digital.</h1>
-  </section>
-
-    <header class="py-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <br></br>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <section id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    Você e algumas pessoas próximas <b class="yellow"><span id="locationJS"></span></b> foram selecionados para participar deste programa.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center" style="margin-bottom: 20px">
+                <h1 class="title"></h1>
+                <div class="som text-dark"> <img src="pv2/img/audio.svg" style="margin-top: 20px"> Certifique-se de que seu som está ligado!</div>
+            </div>
 
             <!-- VSL -->
             <div id="vid_64766e52161325000936f896" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_64766e52161325000936f896" src="https://images.converteai.net/4738a8f6-c097-42d3-b3ca-d15f2dabeaa2/players/64766e52161325000936f896/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_64766e52161325000936f896" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_64766e52161325000936f896">var s=document.createElement("script");s.src="https://scripts.converteai.net/4738a8f6-c097-42d3-b3ca-d15f2dabeaa2/players/64766e52161325000936f896/player.js",s.async=!0,document.head.appendChild(s);</script>
-            
-
-            <br></br>
-            <br></br>
-            <br></br>
-            
-            
-          </div>
-            <!-- Termos de Uso e Política de Privacidade -->
-            <div style="color: rgb(179, 179, 179); height: fit-content;bottom: 0;text-align: center;font-size: 0.4em;">
-              <p>Detetive Digital 2023 ®<p>
-              <p>Todos os Direitos Reservados.</p></br>
-            <p>ESTE SITE NÃO É DO GOOGLE: Este site não faz parte do Google ou Google INC. Além disso, este site não é endossado pelo Google de nenhuma maneira.
-
-              Retornos passados não são garantias de retornos futuros. Os resultados podem variar de pessoa para pessoa.
-              
-              Produto digital entregue via e-mail.</p>                
-              
-             <p> AVISO LEGAL: Os resultados referentes ao serviço foram avaliados e comprovados por nossos clientes. Não garantimos os resultados iguais para todos, estes variam de pessoa para pessoa dependendo de diversos fatores individuais. As informações fornecidas neste site destina-se ao seu conhecimento geral e não garantimos um resultado específico, todo resultado será de inteira responsabilidade do cliente. Essa página/produto não tem vinculo com o Facebook.</p>
-          <div class="text-white mt-4"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a> | <a href="reembolso.html" class="text-white">Política de Reembolso</a>  | <a href="reembolso.html" class="text-white">Aviso de exoneração</a></div>
+                   
+    </section>
+    <section class="c-section">
+        <div class="container" id="c-container">
+            <div class="row count-c">
+                <div clas="col">
+                    24 Comentarios
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/1.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Debora Mattos disse:
+                            </div>
+                            <div class="comentario-c">
+                                Que bom que asssiti até o final! Muito obgda mesmo, amei o aplicativo
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 3 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/19.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Edineia Souza disse:
+                            </div>
+                            <div class="comentario-c">
+                                Hoje posso dizer que estou liberta, eu sentia uma angústia sem igual desconfiando da traicao, e não podia confiar em nada, e hoje eu posso descobrir a VERDADE!!!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 4 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/2.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Marileide Cavalcante de Souza disse:
+                            </div>
+                            <div class="comentario-c">
+                                Minha filha me salvou depois de ter me apresentado o app de vocês... eu suspeitava que estava sendo traida mas na verdade não estava!!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 5 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/4.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Joaquim Dicesar disse:
+                            </div>
+                            <div class="comentario-c">
+                                Não sabia mais em quem confiar, mas esse aplicativo espiao de whatsapp me deu as respostas que precisava. Super recomendo!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 12 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/9.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                María José disse:
+                            </div>
+                            <div class="comentario-c">
+                                Esse aplicativo espiao de whatsapp salvou meu relacionamento! Descobri a verdade e pude resolver os problemas. Recomendo a todos!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 3 min
+                        </div>
+                    </div>
+                    <div class="c-content resposta">
+                        <div class="resposta-c">
+                            <div>
+                                <div class="foto-c">
+                                    <img src="pv2/img/comentarios/m/8.jpg" alt="ganando la mente">
+                                </div>
+                                <div class="nome-c">
+                                    Luana Aguiar disse:
+                                </div>
+                                <div class="comentario-c">
+                                    Esse aplicativo espiao de whatsapp é incrível! Descobri coisas que nem imaginava, e agora posso seguir em frente com minha vida, mto obrigada
+                                </div>
+                            </div>
+                            <div class="hora-c">
+                                Responder · Curtir · Seguir · 3 min
+                            </div>
+                        </div>
+                        <div class="resposta-c">
+                            <div>
+                                <div class="foto-c">
+                                    <img src="pv2/img/comentarios/10.jpg" alt="ganando la mente">
+                                </div>
+                                <div class="nome-c">
+                                    André Vargas disse:
+                                </div>
+                                <div class="comentario-c">
+                                    Confesso que estava com medo de usar esse aplicativo, mas ele superou todas as minhas expectativas. Descobri a verdade HOJE!
+                                </div>
+                            </div>
+                            <div class="hora-c">
+                                Responder · Curtir · Seguir · 3 min
+                            </div>
+                        </div>
+                        <div class="resposta-c">
+                            <div>
+                                <div class="foto-c">
+                                    <img src="pv2/img/comentarios/m/9.jpg" alt="ganando la mente">
+                                </div>
+                                <div class="nome-c">
+                                    María José disse:
+                                </div>
+                                <div class="comentario-c">
+                                    Fico mais segura em saber que vocês já usaram o aplicativo, vou tentar!
+                                </div>
+                            </div>
+                            <div class="hora-c">
+                                Responder · Curtir · Seguir · 3 min
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/5.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Hugo Brandão disse:
+                            </div>
+                            <div class="comentario-c">
+                                Eu estava perdida e não sabia mais o que fazer. Esse aplicativo espiao de whatsapp me trouxe a clareza que precisava...
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 19 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/6.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Estefany Porfirio disse:
+                            </div>
+                            <div class="comentario-c">
+                                Recomendo a todos que estão em busca da verdade.
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 24 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/7.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Jhonathan Pereira disse:
+                            </div>
+                            <div class="comentario-c">
+                                Isso deveria ser compartilhado com mais pessoas, resolvi o problema!!! muito obrigado!!!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 26 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/11.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                María de Lourdes disse:
+                            </div>
+                            <div class="comentario-c">
+                                Esse aplicativo espiao de whatsapp é uma mão na roda. Recomendo sem dúvidas!!!!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 39 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/12.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Alice do Carmo disse:
+                            </div>
+                            <div class="comentario-c">
+                                Todo dia faço o que é passado, e minha glicose nunca mais ficou alta, posso até comer meus carboidratos preferidos!!!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 53 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/13.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Magdalena Sofía disse:
+                            </div>
+                            <div class="comentario-c">
+                                Agora tenho a certeza de que estou tomando decisões baseadas em fatos reais. Recomendo!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 55 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/14.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Hiago Mateus disse:
+                            </div>
+                            <div class="comentario-c">
+                                Pessoal usem sem medo, realmente funciona e vale a pena saber a verdade
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 58 min
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/17.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Felipe Martins disse:
+                            </div>
+                            <div class="comentario-c">
+                                Eu estava meio desconfiado mas depois dos comentários eu tentei, não me arrependo, já gastei muito mas muito mais com psicologo e consultas mas esse aplicativo me ajudou mais do que todos pq agora eu tenho CERTEZA!!!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 1 h
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/18.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Ana Catarina disse:
+                            </div>
+                            <div class="comentario-c">
+                                Já conhecia mas tinha muito medo de ser golpe, mas se eu soubesse antes que funcionava de verdade eu pagaria o que fosse preciso!! Confimo pra vocês pessoal, podem confiar!!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 1 h
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/20.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Marinalva Lins disse:
+                            </div>
+                            <div class="comentario-c">
+                                A pior coisa é perder a fé em solucionar problemas da vida pessoal, mas depois de conhecer esse app Só posso agradecer! Vocês são demais!!!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 1 h
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/14.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Igor Requião disse:
+                            </div>
+                            <div class="comentario-c">
+                                Me sinto uma pessoa nova hoje mt obrigado
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 1 h
+                        </div>
+                    </div>
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img src="pv2/img/comentarios/m/21.jpg" alt="ganando la mente">
+                            </div>
+                            <div class="nome-c">
+                                Graziele Bastos disse:
+                            </div>
+                            <div class="comentario-c">
+                                Não estava mais aguentando as incertezas no meu relacionamento. Esse aplicativo espiao de whatsapp me trouxe respostas rápidas e claras
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 1 h
+                        </div>
+                    </div>
+                    <div class="c-content resposta">
+                        <div class="resposta-c">
+                            <div>
+                                <div class="foto-c">
+                                    <img src="pv2/img/comentarios/23.jpg" alt="ganando la mente">
+                                </div>
+                                <div class="nome-c">
+                                    Breno Cardoso disse:
+                                </div>
+                                <div class="comentario-c">
+                                    Funciona mesmo?
+                                </div>
+                            </div>
+                            <div class="hora-c">
+                                Responder · Curtir · Seguir · 46 min
+                            </div>
+                        </div>
+                        <div class="resposta-c">
+                            <div>
+                                <div class="foto-c">
+                                    <img src="pv2/img/comentarios/m/21.jpg" alt="ganando la mente">
+                                </div>
+                                <div class="nome-c">
+                                    Graziele Bastos disse:
+                                </div>
+                                <div class="comentario-c">
+                                    Simm Bueno Cardoso                                </div>
+                            </div>
+                            <div class="hora-c">
+                                Responder · Curtir · Seguir · 46 min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row face-c">
+                <div clas="col">
+                    <img src="pv2/img/face-icon.png"> Plugin social de Facebook
+                </div>
+            </div>
         </div>
-      </div>
-     </div>
-      </div>
-    </header>
-
+        <img src="pv2/img/c1.png" alt="Detetive Digital" data-enllax-ratio=".9" data-enllax-type="foreground"
+            style="z-index: -99" class="c1">
+        <img src="pv2/img/c2.png" alt="Detetive Digital" data-enllax-ratio=".5" data-enllax-type="foreground"
+            style="z-index:-99" class="c2">
+        <img src="pv2/img/c3.png" alt="Detetive Digital" data-enllax-ratio=".4" data-enllax-type="foreground"
+            style="z-index:-99" class="c3">
+        <img src="pv2/img/c4.png" alt="Detetive Digital" data-enllax-ratio=".7" data-enllax-type="foreground"
+            style="z-index:-99" class="c4">
+        <img src="pv2/img/c5.png" alt="Detetive Digital" data-enllax-ratio=".3" data-enllax-type="foreground"
+            style="z-index:-99" class="c5">
+        <img src="pv2/img/c6.png" alt="Detetive Digital" data-enllax-ratio=".9" data-enllax-type="foreground"
+            style="z-index:-99" class="c6">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="pv2/img/bg-top.png"></div>
+    </section>
+    <section class="button" id="button_chechout_final">
+        <div class="container">
+            <div class="row button_container text-center">
+                <div class="col">
+                    <button type="button" data-ripple-color="#fff" class="btn material-ripple" data-animation="
+              ripple" onclick="redirect()">Quero ter acesso ao Detetive Digital</button>
+                    <div>
+                        <ul class="bandeiras">
+                            <li><img src="pv2/img/mastercard.png"></li>
+                            <li><img src="pv2/img/paypal.png"></li>
+                            <li><img src="pv2/img/visa.png"></li>
+                            <li><img src="pv2/img/american.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 pirataria">
+                    <h3>A pirataria é um <b>CRIME</b></h3>
+                     A venda do Detetive Digital só pode ser feita através deste site. Qualquer outro
+                     site onde você encontra este programa é FALSO e ilegal. Evite falsificações e rejeite
+                     conteúdo ilegal ou pirata. Não nos responsabilizamos por compras feitas em outros sites.
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="row cpy mb-0 mt-0">
+                        <div class="col text-center">
+                            <img src="pv2/img/logo.png" height="68" alt="">
+                            <p class="mb-0">Copyright 2023 - Detetive Digital ® <br>
+                                Todos os direitos reservados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row links">
+                        <div class="col text-center">
+                            <a href="#" class="text-white" target="_blank">termos de Uso</a>
+                            <a href="#" class="text-white" target="_blank">Política de Privacidade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center" style="font-size: 11px; padding: 40px 0px 20px 0px; color: #b7adad;">
+                    <b>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. </b>Uma vez
+                     sair do Facebook, a responsabilidade não é deles, mas do nosso site. nós fazemos tudo
+                     possível indicar e exibir claramente todos os testes de produtos e resultados de uso
+                     real. Não vendemos seu e-mail ou qualquer informação a terceiros. nós nunca fazemos nenhum
+                     tipo de spam.
+                </div>
+                <div class="col-md-6 text-center" style="font-size: 11px; padding: 40px 0px 20px 0px; color: #b7adad;">
+                  
+                     <br>
+                     Atenção: Este produto é digital, o que significa que será enviado por e-mail e
+                     WhatsApp, não fisicamente.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="npm/popper_js_1.16.0/dist/umd/popper.min.js"></script>
+    <script src="bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+    <script src="https://ssl.geoplugin.net/javascript.gp?k=292af9fb00c1353d" type="text/javascript"></script>
     <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none")}, 5); // temporização da Call to Action (em milissegundos)
-      setTimeout(() => {document.getElementById("cta2").classList.remove("d-none")}, 5); // temporização da Call to Action (em milissegundos)
-      setTimeout(() => {document.getElementById("cta3").classList.remove("d-none")}, 5); // temporização da Call to Action (em milissegundos)
+        $(document).ready(function() {
+            if (jQuery(window).width() > 480) {
+                $('.hero').parallax({
+                    imageSrc: 'pv2/img/bg1.jpg',
+                    naturalWidth: 600,
+                    naturalHeight: 400
+                });
+            }
+            setTimeout(function() {
+                $('#button_chechout_hero').show();
+                $('#button_chechout_final').show();
+            }, 1575000);
+        });
+        var scrollEventHandler = function() {
+            window.scroll(0, window.pageYOffset)
+        }
+        window.addEventListener("scroll", scrollEventHandler, false);
+        document.getElementById("locationJS").innerHTML = geoplugin_city();
+        function redirect() {
+            location.href = "https://pay.kiwify.com.br/3KY5DAu?afid=XXXX"+src;
+        }
     </script>
+    <script src="pv2/js/scripts2.js"></script>
+    <script src="pv2/js/jquery.enllax.min.js"></script>
+    <script src="pv2/js/parallax.js"></script>
+</body>
 
-
-
-
-
-   <script>
-    $.ajax({
-    url: "https://geolocation-db.com/jsonp",
-    jsonpCallback: "callback",
-    dataType: "jsonp",
-    success: function(location) {
-      $('#country').html(location.country_name);
-      $('#state').html(location.state);
-      $('#city').html(location.city);
-      $('#latitude').html(location.latitude);
-      $('#longitude').html(location.longitude);
-      $('#ip').html(location.IPv4);
-    }
-  });
-</script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="./assets/js/com.js"></script>
-  </body>
 </html>
